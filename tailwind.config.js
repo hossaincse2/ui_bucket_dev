@@ -1,0 +1,71 @@
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    colors: {
+      blue: "#2763fe",
+      blueTwo: "#DDE7FF",
+      orange: "#ff881b",
+      skyblue: "#F6FCFF",
+      lightblue: "#abdbff",
+      lightblueTwo: "#f3faff",
+      waterLight: "#fafafa",
+      lightgreen: "#e3fcdc",
+      white: "#ffffff",
+      black: "#454545",
+      softWhite: "#F2F2F2",
+      darkblue: "#08163a",
+      success: "#2ABC92",
+      error: "#DD3F39",
+      gray: "#B1BAC7",
+      transparent: "transparent",
+    },
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+    },
+    fontSize: {
+      base: ["16px", "26px"],
+      base2: ["18px", "32px"],
+      lg: ["20px", "35px"],
+      xl: ["25px", "30px"],
+      "2xl": ["35px", "45px"],
+      "3xl": ["45px", "55px"],
+      "4xl": ["55px", "65px"],
+      "5xl": ["70px", "85px"],
+    },
+    fontWeight: {
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+    },
+    borderRadius: {
+      xl: "20px",
+      lg: "15px",
+      md: "10px",
+      sm: "8px",
+      full: "50px",
+    },
+    borderWidth: {
+      1: "1px",
+    },
+    extend: {
+      boxShadow: {
+        xl: "0 40px 40px 90px rgba(0, 0, 1, 0.04)",
+        lg: "0 20px 20px 40px rgba(0, 0, 0, 0.03)",
+        md: "0 20px 15px 50px rgba(0,0,1,0.03)",
+        sm: "5px 5px 20px rgba(0, 0, 1, 0.1)",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
